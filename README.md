@@ -2,7 +2,7 @@
 
 _Hi =D_
 
-_ In this project I will do a Client for League of Legends API_
+_In this project I will do a Client for League of Legends API_
 
 _I'm still just an amateur programmer, but I hope to deliver a good program_
 
