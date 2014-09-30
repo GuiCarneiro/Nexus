@@ -1,6 +1,6 @@
-require "../lib/Nexus/Model/summoner"
-require "../lib/Nexus/Model/runes"
-require "../lib/Nexus/Model/masteries"
+require "../lib/nexus/model/summoner"
+require "../lib/nexus/model/runes"
+require "../lib/nexus/model/masteries"
 module Nexus
 	VERSION_SUMMONER = "v1.4"
 

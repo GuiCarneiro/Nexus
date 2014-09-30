@@ -1,5 +1,5 @@
 require "httparty"
-require '../lib/Nexus/summoner'
+require '../lib/nexus/summoner'
 
 module Nexus
   include HTTParty
