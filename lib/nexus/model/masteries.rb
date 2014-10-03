@@ -20,13 +20,31 @@ module Nexus
 			@id = params["id"]
 			@name = params["name"]
 			@current = params["current"]
-			@slots = params["masteries"]
+
+			@masteries = Array.new()
+
+			if(params["masteries"] != nil)	
+				params["masteries"].each do |m|
+					@masteries.push(Nexus.get_mastery_by_id(m["id"]))
+				end
+			else
+				@masteries = []
+			end
 		end
 	end
 
-	class Masterie
+	class Mastery
 
-		def initialize(params)
+		attr_reader :id, :name, :description, :sanitizedDescription, :level, :prereq, :image, :tier, :type
+
+		def initialize(params)		
+			@id = params["id"]
+			@name = params["name"]
+			@description = params["description"]
+			@sanitizedDescription = params["sanitizedDescription"]
+			@level = params["ranks"]
+			@prereq_id = params["prereq"]
+			@image = params["image"]
 		end
 	end
 end

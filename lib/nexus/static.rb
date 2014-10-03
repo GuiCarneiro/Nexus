@@ -37,7 +37,7 @@ module Nexus
 
 	def self.get_mastery_by_id(mastery_id, masteryData = "all")
 		url = ("#{@global_uri}#{@region}/#{VERSION_STATIC}/mastery/#{mastery_id}?masteryData=#{masteryData}&api_key=#{@api_key}")
-		return (retrieve_url get(url))
+		return Nexus::Mastery.new(retrieve_url get(url))
 	end
 
 	def self.get_runes(runeData = "all")
