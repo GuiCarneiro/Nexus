@@ -1,5 +1,6 @@
 require "httparty"
 require '../lib/nexus/summoner'
+require '../lib/nexus/static'
 
 module Nexus
   include HTTParty
@@ -60,4 +61,13 @@ module Nexus
 
 		end
 	end
+
+	private
+		def self.retrieve_url_ident(response, ident)
+			response.parsed_response["#{ident.to_s.downcase}"]
+		end
+
+		def self.retrieve_url(response)
+			response.parsed_response
+		end
 end
