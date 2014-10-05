@@ -25,7 +25,7 @@ module Nexus
 
 	def self.get_item_by_id(item_id, itemData = "all")
 		url = ("#{@global_uri}#{@region}/#{VERSION_STATIC}/item/#{item_id}?itemData=#{itemData}&api_key=#{@api_key}")
-		return (retrieve_url get(url))
+		return Nexus::Item.new(retrieve_url get(url))
 	end
 
 
