@@ -6,6 +6,7 @@ require_relative 'nexus/connection'
 #Controllers#
 require_relative 'nexus/controller/summoner'
 require_relative 'nexus/controller/static'
+require_relative 'nexus/controller/status'
 
 #Models#
 require_relative 'nexus/model/summoner'
