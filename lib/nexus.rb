@@ -8,6 +8,7 @@ require_relative 'nexus/controller/summoner'
 require_relative 'nexus/controller/static'
 require_relative 'nexus/controller/status'
 require_relative 'nexus/controller/game'
+require_relative 'nexus/controller/champion'
 
 #Models#
 require_relative 'nexus/model/summoner'
