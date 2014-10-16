@@ -9,6 +9,7 @@ require_relative 'nexus/controller/static'
 require_relative 'nexus/controller/status'
 require_relative 'nexus/controller/game'
 require_relative 'nexus/controller/champion'
+require_relative 'nexus/controller/match'
 
 #Models#
 require_relative 'nexus/model/summoner'
@@ -17,4 +18,5 @@ require_relative 'nexus/model/masteries'
 require_relative 'nexus/model/items'
 require_relative 'nexus/model/runes'
 require_relative 'nexus/model/game'
+require_relative 'nexus/model/match'
 
